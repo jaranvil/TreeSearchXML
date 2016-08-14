@@ -13,46 +13,47 @@ namespace TreeXML
 {
     public partial class ParentForm : Form
     {
-        private string fileName;
+        CustomTreeNode tree;
 
         public ParentForm(string fileName)
         {
             InitializeComponent();
-            this.fileName = fileName;
+            CustomTreeNode tree = new CustomTreeNode("root");
+            ProcessXmlForm processForm = new ProcessXmlForm(fileName, tree);
+            processForm.Show();
+            this.tree = tree;
         }
 
         private void ParentForm_Load(object sender, EventArgs e)
         {
-            try
-            {
-                // SECTION 1. Create a DOM Document and load the XML data into it.
-                XmlDocument dom = new XmlDocument();
-                dom.Load(fileName);
+            //try
+            //{
+            //    // SECTION 1. Create a DOM Document and load the XML data into it.
+            //    XmlDocument dom = new XmlDocument();
+            //    dom.Load(fileName);
 
-                // SECTION 2. Initialize the TreeView control.
-                mainTreeView.Nodes.Clear();
-                mainTreeView.Nodes.Add(new TreeNodeWrapper(dom.DocumentElement.Name));
-                TreeNodeWrapper tNode = new TreeNodeWrapper();
-                tNode = (TreeNodeWrapper)mainTreeView.Nodes[0];
+            //    // SECTION 2. Initialize the TreeView control.
+            //    mainTreeView.Nodes.Clear();
+            //    mainTreeView.Nodes.Add(new TreeNodeWrapper(dom.DocumentElement.Name));
+            //    TreeNodeWrapper tNode = new TreeNodeWrapper();
+            //    tNode = (TreeNodeWrapper)mainTreeView.Nodes[0];
 
-                // SECTION 3. Populate the TreeView with the DOM nodes.
-                AddNode(dom.DocumentElement, tNode);
-                //mainTreeView.ExpandAll();
+            //    // SECTION 3. Populate the TreeView with the DOM nodes.
+            //    AddNode(dom.DocumentElement, tNode);
+            //    //mainTreeView.ExpandAll();
 
              
-            }
-            catch (XmlException xmlEx)
-            {
-                MessageBox.Show(xmlEx.Message);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            //}
+            //catch (XmlException xmlEx)
+            //{
+            //    MessageBox.Show(xmlEx.Message);
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
 
-            SearchForm searchForm = new SearchForm(mainTreeView);
-            searchForm.MdiParent = this;
-            searchForm.Show();
+            
         }
 
         private void AddNode(XmlNode inXmlNode, TreeNodeWrapper inTreeNode)
@@ -88,5 +89,18 @@ namespace TreeXML
             
         }
 
+        private void btnNewUISearch_Click(object sender, EventArgs e)
+        {
+            SearchForm searchForm = new SearchForm(mainTreeView);
+            searchForm.MdiParent = this;
+            searchForm.Show();
+        }
+
+        private void btnNewDataStructureSearch_Click(object sender, EventArgs e)
+        {
+            DataStructureSearchForm searchForm = new DataStructureSearchForm(tree);
+            searchForm.MdiParent = this;
+            searchForm.Show();
+        }
     }
 }

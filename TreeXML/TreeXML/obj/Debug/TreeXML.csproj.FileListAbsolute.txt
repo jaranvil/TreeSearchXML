@@ -9,3 +9,16 @@ C:\Users\jared.everett\Documents\Repos\TreeXML\TreeXML\obj\Debug\TreeXML.pdb
 C:\Users\jared.everett\Documents\Repos\TreeXML\TreeXML\obj\Debug\TreeXML.Form1.resources
 C:\Users\jared.everett\Documents\Repos\TreeXML\TreeXML\obj\Debug\TreeXML.ParentForm.resources
 C:\Users\jared.everett\Documents\Repos\TreeXML\TreeXML\obj\Debug\TreeXML.SearchForm.resources
+C:\Users\Jared\Documents\Repos\TreeSearchXML\TreeXML\TreeXML\bin\Debug\TreeXML.exe.config
+C:\Users\Jared\Documents\Repos\TreeSearchXML\TreeXML\TreeXML\obj\Debug\TreeXML.exe
+C:\Users\Jared\Documents\Repos\TreeSearchXML\TreeXML\TreeXML\obj\Debug\TreeXML.pdb
+C:\Users\Jared\Documents\Repos\TreeSearchXML\TreeXML\TreeXML\bin\Debug\TreeXML.exe
+C:\Users\Jared\Documents\Repos\TreeSearchXML\TreeXML\TreeXML\bin\Debug\TreeXML.pdb
+C:\Users\Jared\Documents\Repos\TreeSearchXML\TreeXML\TreeXML\obj\Debug\TreeXML.csprojResolveAssemblyReference.cache
+C:\Users\Jared\Documents\Repos\TreeSearchXML\TreeXML\TreeXML\obj\Debug\TreeXML.Form1.resources
+C:\Users\Jared\Documents\Repos\TreeSearchXML\TreeXML\TreeXML\obj\Debug\TreeXML.ParentForm.resources
+C:\Users\Jared\Documents\Repos\TreeSearchXML\TreeXML\TreeXML\obj\Debug\TreeXML.Properties.Resources.resources
+C:\Users\Jared\Documents\Repos\TreeSearchXML\TreeXML\TreeXML\obj\Debug\TreeXML.SearchForm.resources
+C:\Users\Jared\Documents\Repos\TreeSearchXML\TreeXML\TreeXML\obj\Debug\TreeXML.csproj.GenerateResource.Cache
+C:\Users\Jared\Documents\Repos\TreeSearchXML\TreeXML\TreeXML\obj\Debug\TreeXML.ProcessXmlForm.resources
+C:\Users\Jared\Documents\Repos\TreeSearchXML\TreeXML\TreeXML\obj\Debug\TreeXML.DataStructureSearchForm.resources

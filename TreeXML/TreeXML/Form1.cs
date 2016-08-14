@@ -37,15 +37,21 @@ namespace TreeXML
             {
                 try
                 {
-                    string sFileName = openFileDialog1.FileName; 
+                    string sFileName = openFileDialog1.FileName;
                     ParentForm parentForm = new ParentForm(sFileName);
-                    parentForm.Show();                      
+                    parentForm.Show();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
                 }
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ParentForm parentForm = new ParentForm(Application.StartupPath + "\\sample-large.xml");
+            parentForm.Show();
         }
     }
 }
